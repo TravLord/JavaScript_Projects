@@ -1,0 +1,91 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+    position: absolute; /*this brings calculator border to edge of content*/
+    top: 50%;  /*this brings the calculator half way down the page */
+    left: 50%; /* this brings the calclator to the middle of the page*/
+    transform: translate(-50%, -50%); /* this completely centers the calculator container*/
+    width: 500px; /* this enlarges the calc and widens it*/
+    
+
+}
+
+.calculator-screen {
+    width: 100%; /* this widens the output area across the whole calc container*/
+    font-size: 5rem; /* this enlarges the text of the output area*/
+    height:80px;
+    border:none; 
+    background-color:rgba(0, 0, 0, 0.514);
+    color:white;
+    text-align: right; /*this moves the output text all the way to the right of the screen*/
+    padding-right: 20px; /* puts padding on the right side of the text*/
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px; /*This curves the corners of the screen to match the calc container. */
+}
+
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid rgb(196, 218, 218);
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,
+    rgba (0,0,0,.06));
+    text-shadow: 0 1px rgba(255,255, 255, .4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255,.05), inset 0 1px 0 0
+         rgba(255, 255, 255,.05) , inset 0 -1px 0 0 rgba(255, 255, 255,.05),
+         0 1px 0 0 rgba(255, 255, 255,.05);
+    
+}
+button:hover {
+    background-color: #e1e1e1;
+}
+
+.operator { 
+    color:black;
+    background-image: linear-gradient(to bottom, transparent 50%,
+        rgba(0, 0, 0, .5));  /* This adds the transparent gray color to the buttons through the operator class*/
+    background-color: lightgray; /* this lightens the color a touch*/    
+}
+
+.all-clear {
+    background-color: rgb(245, 67, 67);
+    border-color: darkslategray;
+    color:#fff;
+}
+
+.all-clear:hover {
+    background-color: darked;
+}
+
+.equal-sign {
+    background-color: rgba(16, 209, 243, 0.863);
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%; /*This fills the equal sign container to the full extent it can be */
+    grid-area: 2 / 4 / 6 / 5; 
+}
+
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+.calculator-keys {
+    display: grid; /* This transforms the liner button layout to a grid of a normal calc look*/
+    grid-template-columns: repeat(4, 1fr); /* This tightens up the look and brings the buttons closer together from top to bottom + side to side*/
+    grid-gap: 10px; /* This then spaces the grid an equal amount spreading out the buttons simetrically*/
+    padding: 20px;
+
+}
