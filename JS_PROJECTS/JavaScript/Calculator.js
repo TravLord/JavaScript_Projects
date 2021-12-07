@@ -98,7 +98,7 @@ function Handle_Operator(Next_Operator) {
         //the target variable is an object that represents the element that was clicked
         const { target } = event;
         //if element that was clicked is not a button, exit the function
-        if (!target.matches(button)) {
+        if (!target.matches("button")) {
             return;
         }
 
