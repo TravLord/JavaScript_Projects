@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+		<link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id= 'container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id ='1'>Paragraph 1</p>\
+                            <p id ='2'>Paragraph 2</p>\
+                            <p id ='3'>Paragraph 3</p>\
+                        </div>\
+                    <div>\
+                </body>"
+            );
+            /*jquery css adjust example and hide event example*/ 
+            $("#2").css({"color":"red"});   
+            $("#3").click(function() {
+                $('h1').hide();  
+            });
+            /*jquery event example*/
+
+            $('h1').click(function() {
+                alert("You clicked h1");
+            });
+            /*jquery effects*/
+
+            $("#1").hide(1000);
+            
+        });
+
+    </script>
+</html>
