@@ -11,7 +11,7 @@ of the cost and displays result for user.
 
 3. A working calculator that can complete operations based of user input.
 
-4. A theatre website title academy cinemas utilizing Bootstrap4 framework.
+4. A theatre website titled academy cinemas utilizing Bootstrap4 framework.
 
 5. Files that display AJAX and Jquery functions. 
 
