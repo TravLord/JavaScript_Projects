@@ -11,6 +11,7 @@ of the cost and displays result for user.
 
 ### Calculator
 -  A basic calculator can complete operations based off of user input.
+![Calculator](https://user-images.githubusercontent.com/92835555/175834334-9651bf85-e538-4865-aabb-bd6495241ed7.PNG)
 
 ### Academy Cinemas
 - A theatre website that displays multiple movie listings and times utilizing Bootstrap4 framework for styling.
